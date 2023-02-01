@@ -12,9 +12,7 @@
     @@include('./components/header/header.html')
 
     <main>
-     
       <section class="about-us" id="about-us">
-        <a href="./3.pdf" download>asdasds</a>
         <div class="container">
           <h1 class="about-us__title title">Адвайзер</h1>
           <div class="about-us__info">
@@ -36,6 +34,40 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section class="direction" id="direction">
+        <div class="container">
+          <h2 class="direction__title title">Основные направления деятельности</h2>
+          <ul class="direction__list">
+            <li class="direction__list-item">
+              <img class="direction__list-img" src="./images/direstion/clock.png"></img>
+              <div class="direction__list-title title">Взыскание задолженностей</div>
+              <div class="direction__list-text">
+                Банки и другие финансовые организации сталкиваются с проблемой
+                несвоевременного внесения заемщиками очередных платежей по
+                кредитным обязательствам. Мы можем помочь!
+              </div>
+            </li>
+            <li class="direction__list-item">
+              <img class="direction__list-img" src="./images/direstion/house.png"></img>
+              <div class="direction__list-title title">Реализация залогового имущества</div>
+              <div class="direction__list-text">
+                
+            Продажа залогового имущества осуществляется в короткие сроки и по оптимальным ценам. 
+              </div>
+            </li>
+            <li class="direction__list-item">
+              <img class="direction__list-img" src="./images/direstion/hand-shake.png"></img>
+              <div class="direction__list-title title">Взыскание задолженностей</div>
+              <div class="direction__list-text">
+                Банки и другие финансовые организации сталкиваются с проблемой
+                несвоевременного внесения заемщиками очередных платежей по
+                кредитным обязательствам. Мы можем помочь!
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -186,10 +218,10 @@
                 просроченной задолженности. Указанное согласие дано на срок 15
                 лет, а в случае его отзыва обработка моих данных должна быть
                 прекращена ООО «Фениксом» и/или третьими лицами в порядке и
-                сроки, предусмотренные действующим законодательством.
-                Я даю согласие ООО «Феникс» на обработку данных, указанных мной
-                в настоящей форме любыми способами, в том числе третьими лицами,
-                в том числе воспроизведение, электронное копирование,
+                сроки, предусмотренные действующим законодательством. Я даю
+                согласие ООО «Феникс» на обработку данных, указанных мной в
+                настоящей форме любыми способами, в том числе третьими лицами, в
+                том числе воспроизведение, электронное копирование,
                 обезличивание, блокирование, уничтожение, а также вышеуказанную
                 обработку иных моих данных, полученных в результате их
                 обработки, с целью связи со мной по вопросам исполнения
@@ -206,7 +238,7 @@
       </section>
     </main>
     @@include('./components/footer.html')
-    
-    <script src="js/main.min.js"></script>
+
+    <script type="module" src="js/main.min.js"></script>
   </body>
 </html>

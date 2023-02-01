@@ -1,3 +1,5 @@
+
+
 $(function () {
 //индикатор скролла
 window.onscroll = scrollIndicator;
@@ -19,34 +21,6 @@ function scrollIndicator() {
   }
 }
 
-
-
-
-
-
-
-//burger menu
-  let burger = document.querySelector(".menu__burger");
-  let menu = document.querySelector(".menu__list");
-  
-  const burgerClick = (e) => {
-    if (e.target.closest(".menu__burger")) {
-      menu.classList.toggle("menu__list--active");
-    }
-  };
-
-  const menuClick = (e) => {
-    if (e.target.closest(".menu__list-item")) {
-      menu.classList.remove("menu__list--active");
-    }
-  };
-
-  burger.addEventListener("click", burgerClick);
-
-  menu.addEventListener("click", menuClick);
-
-  var scroll = new SmoothScroll('a[href*="#"]');
-
   //button submit form
   let checkbox = document.querySelector(".callback__checkbox");
   const checkboxClick = () => {
@@ -67,37 +41,6 @@ function scrollIndicator() {
   let im = new Inputmask("+7(999)9999999");
 
   im.mask(document.querySelector('[name = "phone"]'));
-
-
-  
-  //pop-up
-
-
-  let accept = document.querySelector(".callback__accept");
-  let popup = document.querySelector(".popup");
-
-  function popupFunc(accept,popup) {
-    const handlePopup = (e) => {
-      popup.classList.toggle("popup--active");
-      popup.classList.remove('popup--none')
-  
-    };
-  
-    accept.addEventListener("click", handlePopup);
-  
-    const popupClose = (e) =>{
-      if (e.target.closest('.popup__close') || !e.target.closest('.popup__content')) {
-        popup.classList.remove('popup--active')
-        popup.classList.add('popup--none')
-      }
-      
-      
-    }
-
-    popup.addEventListener('click',popupClose)
-  }
-
-  popupFunc(accept,popup)
    
 });
 

@@ -70,7 +70,9 @@
   }
 
   .menu__list.menu__list--active {
-    transform: translateY(120px);
+    transform: translateY(73%);
+    min-height: 100vh;
+    overflow: hidden;
   }
 
   .debt {
@@ -102,6 +104,15 @@
     }
   }
 
+  .direction{
+    &__list-item{
+      &:last-child{
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+    }
+  }
+
   .footer {
     font-size: 15px;
     &__bottom-list {
@@ -110,7 +121,32 @@
   }
 }
 
+@media (max-width: 500px) {
+  
+  .direction{
+    text-align: center;
+  
+    &__list{
+      justify-content: center;
+    
+      img{
+        max-width: 140px;
+        object-fit: cover;
+      }
+    }
+    &__list-item{
+      margin-bottom: 15px;
+    }
+    &__list-title{
+      text-align: center;
+    }
+  }
+
+}
+
 @media (max-width: 440px) {
+
+ 
   .popup {
     &__body {
       align-items: flex-end;
