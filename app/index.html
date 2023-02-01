@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Adviser</title>
+  </head>
+
+  <body>
+    @@include('./components/header/header.html')
+
+    <main>
+     
+      <section class="about-us" id="about-us">
+        <a href="./3.pdf" download>asdasds</a>
+        <div class="container">
+          <h1 class="about-us__title title">Адвайзер</h1>
+          <div class="about-us__info">
+            <ul class="about-us__list">
+              <li class="about-us__list-item">
+                Работает в рамках Федерального Закона 230 "О защите прав и
+                законных интересов физических лиц при осуществлении деятельности
+                по возврату просроченной задолженности".
+              </li>
+              <li class="about-us__list-item">
+                Работает в рамках Федерального Закона 230 "О защите прав и
+                законных интересов физических лиц при осуществлении деятельности
+                по возврату просроченной задолженности".
+              </li>
+              <li class="about-us__list-item">
+                29 декабря 2016 года «Национальная служба взыскания» была
+                включена в реестр коллекторских компаний, свидетельство
+                4/16/77000-КЛ от 29.12.2016 года.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="debt" id="debt">
+        <div class="container">
+          <ul class="debt__list">
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>1</span>
+                <p class="debt__info">
+                  Если Вам позвонил сотрудник компании «НСВ», не спешите бросать
+                  трубку. Мы поможем решить Ваш вопрос с просроченной
+                  задолженностью на взаимовыгодных условиях и предложим Вам
+                  рассрочку и удобный график погашения.
+                </p>
+              </div>
+            </li>
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>2</span>
+                <p class="debt__info">
+                  Если Вам позвонил сотрудник компании «НСВ», не спешите бросать
+                  трубку. Мы поможем решить Ваш вопрос с просроченной
+                  задолженностью на взаимовыгодных условиях и предложим Вам
+                  рассрочку и удобный график погашения.
+                </p>
+              </div>
+            </li>
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>3</span>
+                <p class="debt__info">
+                  Если Вам позвонил сотрудник компании «НСВ», не спешите бросать
+                  трубку. Мы поможем решить Ваш вопрос с просроченной
+                  задолженностью на взаимовыгодных условиях и предложим Вам
+                  рассрочку и удобный график погашения.
+                </p>
+              </div>
+            </li>
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>4</span>
+                <p class="debt__info">
+                  Если Вам позвонил сотрудник компании «НСВ», не спешите бросать
+                  трубку. Мы поможем решить Ваш вопрос с просроченной
+                  задолженностью на взаимовыгодных условиях и предложим Вам
+                  рассрочку и удобный график погашения.
+                </p>
+              </div>
+            </li>
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>5</span>
+                <p class="debt__info">
+                  Компания «НСВ» выступает агентом кредитора и звонит заемщикам
+                  в случаях, когда кредит просрочен, и кредитор (банк, МФО)
+                  передал долг на взыскание в коллекторское агентство. ООО «НСВ»
+                  занимается взысканием долга на основании агентского договора с
+                  кредитором и работает в рамках федерального закона № 230-ФЗ «О
+                  защите прав и законных интересов физических лиц при
+                  осуществлении деятельности по возврату просроченной
+                  задолженности…».
+                </p>
+              </div>
+            </li>
+            <li class="debt__list-item">
+              <div class="debt__box">
+                <span>6</span>
+                <p class="debt__info">
+                  Если Вам позвонил сотрудник компании «НСВ», не спешите бросать
+                  трубку. Мы поможем решить Ваш вопрос с просроченной
+                  задолженностью на взаимовыгодных условиях и предложим Вам
+                  рассрочку и удобный график погашения.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="callback" id="callback">
+        <div class="container">
+          <h2 class="callback__title title">Cвязаться с редакцией</h2>
+          <form action="#" class="callback__form" method="POST">
+            <div class="callback__inner">
+              <input
+                class="callback__form-input"
+                type="text"
+                name="name"
+                placeholder="имя и фамилия"
+                required
+              />
+              <input
+                class="callback__form-input"
+                type="date"
+                name="date"
+                placeholder="dd-mm-yyyy"
+                required
+              />
+            </div>
+            <div class="callback__inner">
+              <input
+                class="callback__form-input"
+                type="phone"
+                name="phone"
+                placeholder="номер телефона"
+                required
+              />
+              <input
+                class="callback__form-input"
+                type="email"
+                name="mail"
+                placeholder="email"
+                required
+              />
+            </div>
+            <textarea class="callback__textarea" name="info"></textarea>
+
+            <div class="callback__wrapper">
+              <button class="callback__btn disabled" type="submit" disabled>
+                отправить
+              </button>
+              <label>
+                <input class="callback__checkbox" type="checkbox" />
+                <div class="callback__custom-checkbox"></div>
+              </label>
+              <span class="callback__accept"
+                >я согласен с условием передачи данных</span
+              >
+            </div>
+          </form>
+        </div>
+
+        <div class="popup">
+          <div class="popup__body">
+            <div class="popup__content">
+              <span class="popup__close">закрыть</span>
+              <div class="popup__title title">Условия передачи информации</div>
+              <div class="popup__text">
+                Я даю согласие ООО «Феникс» на обработку данных, указанных мной
+                в настоящей форме любыми способами, в том числе третьими лицами,
+                в том числе воспроизведение, электронное копирование,
+                обезличивание, блокирование, уничтожение, а также вышеуказанную
+                обработку иных моих данных, полученных в результате их
+                обработки, с целью связи со мной по вопросам исполнения
+                заключенных со мной и/или третьими лицами договоров в рамках
+                осуществления ООО «Феникс» деятельности по обеспечению возврата
+                просроченной задолженности. Указанное согласие дано на срок 15
+                лет, а в случае его отзыва обработка моих данных должна быть
+                прекращена ООО «Фениксом» и/или третьими лицами в порядке и
+                сроки, предусмотренные действующим законодательством.
+                Я даю согласие ООО «Феникс» на обработку данных, указанных мной
+                в настоящей форме любыми способами, в том числе третьими лицами,
+                в том числе воспроизведение, электронное копирование,
+                обезличивание, блокирование, уничтожение, а также вышеуказанную
+                обработку иных моих данных, полученных в результате их
+                обработки, с целью связи со мной по вопросам исполнения
+                заключенных со мной и/или третьими лицами договоров в рамках
+                осуществления ООО «Феникс» деятельности по обеспечению возврата
+                просроченной задолженности. Указанное согласие дано на срок 15
+                лет, а в случае его отзыва обработка моих данных должна быть
+                прекращена ООО «Фениксом» и/или третьими лицами в порядке и
+                сроки, предусмотренные действующим законодательством.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./components/footer.html')
+    
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

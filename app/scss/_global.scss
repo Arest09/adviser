@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.4;
+  @extend %dmsans-500;
+  @extend %rubik-500;
+  @extend %myriadpro-regular;
+  
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.title {
+  @extend %rubik-500;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+}

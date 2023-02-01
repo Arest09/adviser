@@ -1,0 +1,63 @@
+$title-color:#191919;
+$dark-color:#04131a;
+$text-color:#fff;
+$accent-color:#FF850D;
+
+
+%dmsans-800 {
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%dmsans-500 {
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%Rubik-light {
+    font-family: 'Rubik-light', sans-serif;
+    font-weight: 300;
+}
+
+%Rubik-bold {
+    font-family: 'Rubik-Bold';
+    font-weight: 700;
+}
+
+%myriadpro-regular {
+    font-family: 'myriadpro-regular', sans-serif;
+    font-weight: 400;
+
+}
+
+%Poppins-Bold {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
