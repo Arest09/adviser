@@ -10,7 +10,15 @@
 </head>
 
 <body>
-  @@include('./components/header/header.html')
+  @@include('./components/header/header.html',{
+    "links":{
+      "aboutUs":"#about-us",
+      "direction":"#direction",
+      "debt":"#debt",
+      "footer":"#footer",
+      "callback":"#callback"
+    }
+  })
 
   <main>
     <section class="about-us" id="about-us">
