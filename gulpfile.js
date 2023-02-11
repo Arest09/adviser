@@ -77,7 +77,8 @@ function scripts() {
     "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
     "node_modules/smooth-scroll/dist/smooth-scroll.js",
     "node_modules/inputmask/dist/jquery.inputmask.js",
-    "app/js/main.js","app/components/js/**/*.js"
+    "app/components/js/**/*.js",
+    "app/js/main.js",
   ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())

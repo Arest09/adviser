@@ -21,7 +21,7 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  &__logo {    
+  &__logo {
     svg {
       fill: white;
       transition: fill 0.5s;
@@ -220,7 +220,7 @@
     justify-content: space-between;
   }
 
-  &__support{
+  &__support {
     max-width: 170px;
   }
 
@@ -235,10 +235,6 @@
       fill: $accent-color;
     }
   }
-
-
-
-  
 
   &__support-item + &__support-item {
     margin-top: 15px;
@@ -371,8 +367,8 @@
 .debt {
   padding: 100px 0 150px;
   background-size: contain;
-  background-image: url('../images//main_bg.jpg');
- 
+  background-image: url("../images//main_bg.jpg");
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -403,23 +399,23 @@
   }
 }
 
-
 ///direction
-.direction{
+.direction {
   padding: 100px 0 100px;
 
-  &__title{
+  &__title {
     margin-bottom: 20px;
     text-align: center;
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    text-align: center;
   }
-  &__list-item{
+  &__list-item {
     flex-basis: 230px;
     display: flex;
     flex-direction: column;
@@ -428,18 +424,33 @@
     padding: 0 20px;
   }
 
-  &__list-title{
-    text-align: left;
+  &__list-title {
     font-size: 18px;
     margin-bottom: 10px;
   }
 
-  &__list-img{
+  &__list-img {
     margin-bottom: 15px;
   }
 
-  &__list-text{
+  &__list-text {
     @extend %Rubik-light;
+  }
+
+  &__read-more {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+    display: block;
+    @extend %Poppins-Bold;
+    font-size: 20px;
+    transition: color 0.5s ease-in-out;
+    text-transform: uppercase;
+
+    &:hover{
+     color: $accent-color;
+    }
   }
 }
 
