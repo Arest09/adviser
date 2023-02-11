@@ -12,8 +12,13 @@ if (document.querySelector(".callback__accept")) {
       popup.classList.toggle("popup--active")
       header.style.display = "none"
       popup.classList.remove("popup--none")
-      popupText.innerHTML = text
+      document.body.classList.add("lock")
+      popupText.textContent = text
+      console.log(e.target)
     }
+
+  
+    
 
     accept.addEventListener("click", handlePopup)
 
@@ -23,6 +28,7 @@ if (document.querySelector(".callback__accept")) {
         !e.target.closest(".popup__content")
       ) {
         popup.classList.remove("popup--active")
+        document.body.classList.remove("lock")
         popup.classList.add("popup--none")
         header.style.display = "block"
       }
@@ -61,3 +67,4 @@ if (document.querySelector(".callback__accept")) {
   popupFunc(accept, popup, text1)
   popupFunc(company, popup, text2)
 }
+
