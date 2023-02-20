@@ -4,23 +4,22 @@ if (document.querySelector(".callback__accept")) {
   let accept = document.querySelector(".callback__accept")
   let popup = document.querySelector(".popup")
   let header = document.querySelector(".header")
-  let company = document.querySelector(".popup-header")
+/*   let company = document.querySelector(".popup-header") */
   let popupText = document.querySelector(".popup__text")
 
-  function popupFunc(accept, popup, text) {
+  function popupFunc(element, popup, text) {
     const handlePopup = (e) => {
       popup.classList.toggle("popup--active")
       header.style.display = "none"
       popup.classList.remove("popup--none")
       document.body.classList.add("lock")
-      popupText.textContent = text
-      console.log(e.target)
+      popupText.innerHTML = text
     }
 
   
     
 
-    accept.addEventListener("click", handlePopup)
+    element.addEventListener("click", handlePopup)
 
     const popupClose = (e) => {
       if (
@@ -65,6 +64,6 @@ if (document.querySelector(".callback__accept")) {
   const text2 = '<a href="">лицензия<a/>'
 
   popupFunc(accept, popup, text1)
-  popupFunc(company, popup, text2)
+  /* popupFunc(company, popup, text2) */
 }
 
