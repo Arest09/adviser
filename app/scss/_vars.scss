@@ -1,63 +1,36 @@
-$title-color:#191919;
-$dark-color:#04131a;
-$text-color:#fff;
-$accent-color:#FF850D;
+$title-color: #191919;
+$dark-color: #04131a;
+$text-color: #fff;
+$accent-color: #ff850d;
 
-
-%dmsans-800 {
-    font-family: 'DMSans-Bold', sans-serif;
-    font-weight: 700;
+%golog-400 {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
 }
 
-%dmsans-500 {
-    font-family: 'DMSans-Medium', sans-serif;
-    font-weight: 500;
+%golos-700 {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 700;
 }
 
-%dmsans-400 {
-    font-family: 'DMSans-Regular', sans-serif;
-    font-weight: 400;
+%nunito-300 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
 }
 
-%rubik-500 {
-    font-family: 'Rubik-Medium', sans-serif;
-    font-weight: 500;
+%nunito-400 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
 }
-
-%rubik-400 {
-    font-family: 'Rubik-Regular', sans-serif;
-    font-weight: 400;
-}
-
-%Rubik-light {
-    font-family: 'Rubik-light', sans-serif;
-    font-weight: 300;
-}
-
-%Rubik-bold {
-    font-family: 'Rubik-Bold';
-    font-weight: 700;
-}
-
-%myriadpro-regular {
-    font-family: 'myriadpro-regular', sans-serif;
-    font-weight: 400;
-
-}
-
-%Poppins-Bold {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
-}
-
-
-
-
 
 @function max($numbers...) {
-    @return m#{a}x(#{$numbers});
+  @return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
-    @return m#{i}n(#{$numbers});
+  @return m#{i}n(#{$numbers});
 }

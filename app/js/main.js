@@ -19,7 +19,6 @@ $(function () {
     checkbox.addEventListener("click", checkboxClick)
   }
 
-
   //phone mask
   if (document.querySelector('[name = "phone"]')) {
     let im = new Inputmask("+7(999)9999999")

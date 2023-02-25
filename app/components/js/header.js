@@ -15,6 +15,6 @@ function scrollIndicator() {
   if (winScroll > 0) {
     header.style.background = "#253a43"
   } else {
-    header.style.background = "#04131a"
+    header.style.background = "rgb(7 38 52 / 72%)"
   }
 } 

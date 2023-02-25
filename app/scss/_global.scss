@@ -1,14 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-size: 16px;
   line-height: 1.4;
-  @extend %myriadpro-regular;
+  @extend %golog-400;
 
-  &.lock{
+  &.lock {
     overflow: hidden;
   }
-  
 }
 
 .container {
@@ -21,17 +24,27 @@ main {
   flex-grow: 1;
 }
 
+section,footer {
+  scroll-margin-top: 106px;
+}
+
+::-webkit-full-page-media,
+.section:future,
+.section:root .safari_only {
+  padding-top: 130px;
+}
+
 .title {
-  @extend %Poppins-Bold;
   font-size: 20px;
+  @extend %golos-700;
 }
 
 input[type="checkbox"] {
   -webkit-appearance: none;
 }
 
-@media(max-width:425px){
-  .title{
+@media (max-width: 425px) {
+  .title {
     font-size: 16px;
   }
 }
